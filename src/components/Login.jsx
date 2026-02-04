@@ -8,7 +8,7 @@ const Login = () => {
   const [isRegister, setIsRegister] = useState(false);
   
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState(""); // <--- NEW EMAIL STATE
+  const [email, setEmail] = useState(""); 
   const [password, setPassword] = useState("");
   const [roomId, setRoomId] = useState("");
   const [error, setError] = useState("");
@@ -23,10 +23,10 @@ const Login = () => {
     try {
       const endpoint = isRegister ? "/register" : "/login";
       
-      // Call Backend
+      // ✅ UPDATED: Connects to your Render Cloud Server
       const res = await axios.post(`https://collab-server-arunima.onrender.com/api/auth${endpoint}`, {
         username,
-        email: isRegister ? email : undefined, // <--- SEND EMAIL ONLY IF REGISTERING
+        email: isRegister ? email : undefined, 
         password,
       });
 
@@ -78,7 +78,7 @@ const Login = () => {
                 onChange={(e) => setUsername(e.target.value)}
               />
 
-              {/* --- NEW EMAIL INPUT (Only shows during Registration) --- */}
+              {/* Only show Email if Registering */}
               {isRegister && (
                 <input
                   type="email"
