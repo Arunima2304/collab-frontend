@@ -1,16 +1,53 @@
-# React + Vite
+# 📚 CollabStudy - Real-Time Collaboration Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CollabStudy is a real-time virtual study room application that allows users to collaborate on PDF documents instantly. It features live synchronization of page turns, highlighting, drawing, and chat, making remote group study seamless.
 
-Currently, two official plugins are available:
+**🔗 Live Demo:** [Click here to view the App](https://collab-frontend-git-main-arunimachakrabortys-projects.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **📄 Real-Time PDF Sync:** When one user changes the page, it updates for everyone in the room instantly.
+* **🖍️ Live Collaboration:** Highlight text and add notes that sync across all connected users.
+* **💬 Integrated Chat:** Real-time messaging for discussing concepts while studying.
+* **🔒 Secure Authentication:** User registration and login protected by JWT (JSON Web Tokens).
+* **📂 Cloud Storage:** PDFs are uploaded and served securely via the backend.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+**Frontend:**
+* React.js (Vite)
+* Socket.io-client (Real-time communication)
+* Tailwind CSS (Styling)
+* PDF.js (Document rendering)
+
+**Backend:**
+* Node.js & Express.js
+* MongoDB Atlas (Database)
+* Socket.io (WebSockets)
+* Multer (File Handling)
+
+---
+
+## ⚙️ How to Run Locally
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Arunima2304/collab-frontend.git](https://github.com/Arunima2304/collab-frontend.git)
+    cd collab-frontend
+    ```
+
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the App:**
+    ```bash
+    npm run dev
+    ```
+
+---
