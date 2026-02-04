@@ -24,7 +24,7 @@ const Login = () => {
       const endpoint = isRegister ? "/register" : "/login";
       
       // Call Backend
-      const res = await axios.post(`http://localhost:3001/api/auth${endpoint}`, {
+      const res = await axios.post(`https://collab-server-arunima.onrender.com/api/auth${endpoint}`, {
         username,
         email: isRegister ? email : undefined, // <--- SEND EMAIL ONLY IF REGISTERING
         password,
